@@ -13,7 +13,7 @@ async function run() {
   let body = COMMENT;
   if (TENOR_TOKEN) {
     const giftUrl = await getGift();
-    body = TENOR_TOKEN ? `${COMMENT}\n\n<img src="${giftUrl}" alt="William Gift" />`;
+    body = `${COMMENT}\n\n<img src="${giftUrl}" alt="William Gift" />`;
   }
   await octokit.issues.createComment({
     ...context.repo,
