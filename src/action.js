@@ -4,6 +4,7 @@ const github = require('@actions/github');
 const GITHUB_TOKEN = core.getInput('TOKEN_GITHUB');
 const COMMENT = core.getInput('COMMENT');
 const TENOR_TOKEN = core.getInput('TENOR_TOKEN');
+console.log('GITHUB_TOKEN=>', GITHUB_TOKEN)
 const octokit = github.getOctokit(GITHUB_TOKEN);
 
 const { context = {} } = github;
