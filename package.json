@@ -1,0 +1,33 @@
+{
+  "name": "action-create-github-comment",
+  "version": "1.0.0",
+  "description": "Create a comment in github PR",
+  "main": "src/action.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build src/action.js -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fortil/action-create-github-comment.git"
+  },
+  "keywords": [
+    "github",
+    "actions",
+    "get",
+    "random",
+    "number"
+  ],
+  "author": "fortil <billalpeza@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fortil/action-create-github-comment/issues"
+  },
+  "homepage": "https://github.com/fortil/action-create-github-comment#readme",
+  "devDependencies": {
+    "@actions/core": "^1.4.0",
+    "@actions/github": "^5.0.0",
+    "@vercel/ncc": "^0.29.0",
+    "node-fetch": "^2.6.1"
+  }
+}

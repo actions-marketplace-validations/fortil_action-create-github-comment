@@ -1,0 +1,18 @@
+name: 'Create github comment'
+description: 'create github comment into a PR'
+author: 'William Penagos'
+
+inputs:
+  TOKEN_GITHUB:
+    description: 'Token to create a comment'
+    required: true
+  COMMENT:
+    description: 'Comment to post'
+    required: true
+  TENOR_TOKEN:
+    description: 'TENOR Token to send random gifts'
+    required: false
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
