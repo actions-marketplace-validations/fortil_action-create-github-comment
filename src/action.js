@@ -16,7 +16,8 @@ async function run() {
     const giftUrl = await getGift();
     body = `${COMMENT}\n\n<img src="${giftUrl}" alt="William Gift" />`;
   }
-  await octokit.issues.createComment({
+  console.log(octokit)
+  await octokit.rest.issues.createComment({
     ...context.repo,
     issue_number: pull_request.number,
     body
