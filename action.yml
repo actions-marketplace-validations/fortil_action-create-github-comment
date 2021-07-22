@@ -2,6 +2,10 @@ name: 'Create github comment'
 description: 'create github comment into a PR'
 author: 'William Penagos'
 
+branding:
+  icon: 'check-circle'  
+  color: 'green'
+
 inputs:
   TOKEN_GITHUB:
     description: 'Token to create a comment'
