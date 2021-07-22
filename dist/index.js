@@ -6281,11 +6281,11 @@ var __webpack_exports__ = {};
 (() => {
 const core = __nccwpck_require__(186);
 const github = __nccwpck_require__(438);
+const fetch = __nccwpck_require__(467);
 
 const GITHUB_TOKEN = core.getInput('TOKEN_GITHUB');
 const COMMENT = core.getInput('COMMENT');
 const TENOR_TOKEN = core.getInput('TENOR_TOKEN');
-console.log('GITHUB_TOKEN=>', GITHUB_TOKEN)
 const octokit = github.getOctokit(GITHUB_TOKEN);
 
 const { context = {} } = github;
