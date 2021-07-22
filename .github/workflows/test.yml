@@ -1,0 +1,16 @@
+name: Testing PR
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./
+        with:
+          GITHUB_TOKEN: ${{secrets.TOKEN}}
+          TENOR_TOKEN: ${{secrets.TENOR}}
+          COMMENT: 'Is a test comment'
