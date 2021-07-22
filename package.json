@@ -15,8 +15,8 @@
     "github",
     "actions",
     "get",
-    "random",
-    "number"
+    "create",
+    "comment"
   ],
   "author": "fortil <billalpeza@gmail.com>",
   "license": "MIT",
