@@ -3,7 +3,7 @@ description: 'create github comment into a PR'
 author: 'William Penagos'
 
 inputs:
-  TOKEN:
+  TOKEN_GITHUB:
     description: 'Token to create a comment'
     required: true
   COMMENT:

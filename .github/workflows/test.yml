@@ -11,6 +11,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ./
         with:
-          GITHUB_TOKEN: ${{secrets.TOKEN}}
+          TOKEN_GITHUB: ${{secrets.TOKEN}}
           TENOR_TOKEN: ${{secrets.TENOR}}
           COMMENT: 'Is a test comment'
